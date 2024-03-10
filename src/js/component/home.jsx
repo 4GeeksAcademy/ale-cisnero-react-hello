@@ -12,6 +12,15 @@ import Pavoreal from '../../img/pexels-pavoreal.jpg'
 import Carousel from "./Carousel.jsx";
 
 //include images into your bundle
+//Objecto para cambiar de colores las card
+let colors = {
+	red : 'bg-danger',
+	blue : 'bg-primary',
+	green : 'bg-success',
+	yellow : 'bg-warning',
+	grey : 'bg-light',
+	black : 'bg-dark',
+}
 
 //create your first component
 const Home = () => {
@@ -35,16 +44,19 @@ const Home = () => {
 				</div>
 
 				<div className='row justify-content-center card-edit-contenedor' id="Card">
-					<div className='col-12 col-sm-9 col-md-6 col-lg-3 mb-3'>
+					<div className='col-12 col-sm-9 col-md-6 col-xxl-3 mb-3'>
 						<Card
 							imgUrl={Paris}
 							imagenAlt='Paris'
 							title='Paris France Card'
 							text='París es la capital de Francia y su ciudad más poblada. Capital de la región de Isla de Francia (o «Región Parisina»), constituye el único departamento unicomunal del país.'
 							button='Find Out More!'
+							color1={colors.red}
+							color2={colors.light}
+							
 						/>
 					</div>
-					<div className='col-12 col-sm-9 col-md-6 col-lg-3 mb-3'>
+					<div className='col-12 col-sm-9 col-md-6 col-xxl-3 mb-3'>
 						<Card
 							imgUrl={Sydney}
 							imagenAlt='Sydney'
@@ -53,7 +65,7 @@ const Home = () => {
 							button='Find Out More!'
 						/>
 					</div>
-					<div className='col-12 col-sm-9 col-md-6 col-lg-3 mb-3'>
+					<div className='col-12 col-sm-9 col-md-6 col-xxl-3 mb-3'>
 						<Card
 							imgUrl={Vzla}
 							imagenAlt='Venezuela'
@@ -62,7 +74,7 @@ const Home = () => {
 							button='Find Out More!'
 						/>
 					</div>
-					<div className='col-12 col-sm-9 col-md-6 col-lg-3 mb-3'>
+					<div className='col-12 col-sm-9 col-md-6 col-xxl-3 mb-3'>
 						<Card
 							imgUrl={Pavoreal}
 							imagenAlt='pavoreal'
