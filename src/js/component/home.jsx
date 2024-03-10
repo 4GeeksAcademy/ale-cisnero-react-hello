@@ -19,7 +19,6 @@ let colors = {
 	green : 'bg-success',
 	yellow : 'bg-warning',
 	grey : 'bg-light',
-	black : 'bg-dark',
 }
 
 //create your first component
@@ -53,7 +52,6 @@ const Home = () => {
 							button='Find Out More!'
 							color1={colors.red}
 							color2={colors.light}
-							
 						/>
 					</div>
 					<div className='col-12 col-sm-9 col-md-6 col-xxl-3 mb-3'>
@@ -63,6 +61,8 @@ const Home = () => {
 							title='Sydney Australia Card'
 							text='Sídney es la ciudad más grande y poblada de Australia y Oceanía. En junio de 2020, la población metropolitana estimada de Sídney era de 5 361 466 habitantes. Es la capital del estado de Nueva Gales del Sur y fue el asentamiento de la primera colonia británica en Australia. Fue fundada en 1788 en la cala de Sídney por Arthur Phillip, almirante de la Primera Flota de Gran Bretaña, y es la ciudad más antigua del país'
 							button='Find Out More!'
+							color1={colors.blue}
+							color2={colors.light}
 						/>
 					</div>
 					<div className='col-12 col-sm-9 col-md-6 col-xxl-3 mb-3'>
@@ -72,6 +72,8 @@ const Home = () => {
 							title='Canaima Venezuela Card'
 							text='El Parque Nacional Canaima es un parque nacional ubicado en el estado Bolívar, Venezuela. Fue instaurado el 12 de junio de 1962 y declarado Patrimonio de la Humanidad por la Unesco en el año 1994.'
 							button='Find Out More!'
+							color1={colors.green}
+							color2={colors.light}
 						/>
 					</div>
 					<div className='col-12 col-sm-9 col-md-6 col-xxl-3 mb-3'>
@@ -81,6 +83,8 @@ const Home = () => {
 							title='Pavoreal South Africa Card'
 							text='El pavo real común (Pavo cristatus), también conocido como pavo real de la India o pavo real de pecho azul es una especie de ave galliforme de la familia Phasianidae, una de las dos especies del género Pavo, que desde tiempos antiguos destacó entre los animales admirados por el ser humano a causa del extraordinario abanico policromado que constituye la cola de los machos.'
 							button='Find Out More!'
+							color1={colors.yellow}
+							color2={colors.light}
 						/>
 					</div>
 				</div>

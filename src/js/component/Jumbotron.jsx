@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Jumbotron = (props) => {
+    
     return (
         <div className='card bg-light shadow bg-body rounded prin-2'>
             <div className='card-body d-flex justify-content-center flex-column align-items-start'>
