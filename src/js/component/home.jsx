@@ -2,6 +2,7 @@ import React from "react";
 import Card from './Card.jsx'
 import Navbar from './Navbar.jsx'
 import Jumbotron from "./Jumbotron.jsx";
+import Form from './Form.jsx'
 import Footer from "./Footer.jsx";
 
 /* IMAGENES */
@@ -87,6 +88,9 @@ const Home = () => {
 							color2={colors.light}
 						/>
 					</div>
+				</div>
+				<div className="d-flex justify-content-center">
+					<Form />
 				</div>
 			</div>
 

@@ -11,9 +11,9 @@ const Card = (props) => {
     const cambiarColor = () => setColor(prev => !prev)
 
     return (
-        <div className={`card mt-3 shadow bg-body rounded bg-primary card-edit ${color ? color1 : color2}`}>
+        <div className='card mt-3 shadow bg-body rounded card-edit'>
             <img className="card-img-top img-card" src={props.imgUrl} alt={`Img de ${props.imagenAlt}`} />
-            <div className='card-body'>
+            <div className={`card-body ${color ? color1 : color2}`}>
 
                 <h5 className='card-title'>{props.title}</h5>
                 <p className='card-text'>{props.text}</p>
